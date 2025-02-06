@@ -1,0 +1,203 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body, h1, h2, h3{
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:#fff ;
+}
+
+h1{
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 0.9;
+}
+
+h2{
+  font-size: 1.6rem;
+}
+
+h3{
+  font-size: 1.3rem;
+}
+
+p{
+  font-size: 1rem;
+}
+
+.border{
+  border: 1px solid #000;
+}
+
+
+/* MAIN */
+
+main{
+  background-color: #1A354A;
+  min-height: 100vh;
+}
+
+main .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+main .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border-color: #fff;
+  margin-top: 50px;
+  padding: 20px;
+  width: 40%;
+  
+}
+
+main .header .header-score{
+  font-size: 1.8rem;
+  padding: 10px 30px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  color:#1A354A ;
+}
+
+main .header .header-score p span{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+
+main .game-board{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+main .game-board .board-options-top{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-image: url(/images/bg-pentagon.svg);
+  background-repeat: none;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+main .game-board .board-options-top .board-options-top1, 
+main .game-board .board-options-top .board-options-top2, 
+main .game-board .board-options-bottom{
+  border-radius: 100px;
+  padding: 20px;
+  background-color: #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main .score-card .score-card-you,
+main .score-card .score-card-house{
+  border-radius: 100px;
+  padding: 20px;
+  background-color: #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main .game-board .board-options-top .board-options-top1{
+  border: 10px solid #E43C5B;
+}
+
+main .game-board .board-options-top .board-options-top2{
+  border: 10px solid  #425ABD;
+}
+
+main .game-board .board-options-bottom{
+  border: 10px solid #E7A631;
+}
+
+
+
+main .container  .score-card{
+  display: none;
+}
+
+main .score-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20px auto;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  row-gap: 30px;
+  margin-top: 50px;
+  width: 700px;
+  padding: 30px;
+}
+
+main .score-card .score-card-you{
+  border: 10px solid  #425ABD;
+  
+}
+
+main .score-card .score-card-you p{
+  
+}
+
+
+main .score-card .score-card-you img{
+ 
+}
+
+main .container .score-card .score-card-win{
+  text-align: center;
+}
+
+main .container .score-card .score-card-win p{
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+main .container .score-card .score-card-win button{
+  padding: 5px 15px;
+  width: 150px;
+  margin-top: 10px;
+  color: #1A354A;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: none;
+}
+
+main .container .score-card .score-card-house{
+  border: 10px solid #E43C5B;
+}
+
+
+/* FOOTER */
+main .container footer{
+  margin: 20px 0px;
+}
+
+footer .footer-rules a{
+  border-radius: 5px;
+  padding: 5px 40px;
+  border: 1px solid #fff;
+  text-align: right;
+  text-decoration: none;
+  color: #fff;
+}

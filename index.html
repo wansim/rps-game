@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper & Scissors</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <main class="border"><!-- Main starts -->
+    
+    <section class="container border"><!-- Main container -->
+      <header class="header border"><!-- Header starts -->
+        <div class="header-title border"><!-- Header title starts -->
+          <h1>ROCK</h1> 
+          <h1>PAPER</h1>
+          <h1>SCISSORS</h1>
+        </div>
+        <div class="header-score border"><!-- Header score starts -->
+          <p>SCORE</p>
+          <p><span>12</span></p>
+        </div>
+      </header>
+
+      <section class="game-board border"><!-- Game board starts -->
+        
+        <div class="board-options-top boarder"><!-- Game board options -->
+          <div class="board-options-top1 border"><!-- Game options starts -->
+            <img src="images/icon-paper.svg">
+          </div>
+          <div class="board-options-top2 border"><!-- Game options starts -->
+            <img src="images/icon-scissors.svg">
+          </div>
+        </div>
+        
+        <div class="board-options-bottom border"><!-- Game options starts -->
+          <img src="images/icon-rock.svg">
+        </div>
+      </section>
+      
+
+      <section class="score-card border"><!-- Score card starts -->
+        <div class="border"><!-- Score card Col 1 - YOU PICKED -->
+          <p>YOU PICKED</p>
+        </div>
+        <div class="border"><!-- Score card Col 2 - HOUSE PICKED -->
+          <p></p>
+        </div>
+        <div class="border"><!-- Score card Col 3 - HOUSE PICKED -->
+          <p>THE HOUSE PICKED</p>
+        </div>
+
+        <div class="score-card-you border"><!-- Score card Col 1 - YOU PICKED IMAGE -->
+          <img src="images/icon-paper.svg">
+        </div>
+        <div class="score-card-win border"><!-- Score Col 2 - YOU WIN -->
+          <p>YOU WIN</p>
+          <button>PLAY AGAIN</button>
+        </div>        
+        <div class=" score-card-house border"><!-- Score card Col 3 - HOUSE PIECKED IMG -->
+          <img src="images/icon-rock.svg">
+        </div>
+      </section>
+
+      <footer class="border"><!-- Footer starts -->
+        <div class="footer-rules border"><!-- Footer rules starts  -->
+          <a href="">RULES</a>
+        </div>
+      </footer>
+
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
