@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const header_score = document.querySelector('.header .header-score p span');
 const game_board = document.querySelector('.game-board');
 const buttons = Array.from(document.getElementsByClassName('.board-options .board-buttons'));
@@ -81,3 +82,6 @@ buttons.forEach(button => {
   
   
   
+=======
+
+>>>>>>> 3e302fc565ba36768781b2fcb9a2ade74dba80a7
