@@ -49,6 +49,9 @@ main .container{
   background-image: url(images/);
 }
 
+
+/* HEADER!!!!!!!!!!!!!!!! */
+
 main .header{
   display: flex;
   justify-content: space-between;
@@ -67,6 +70,7 @@ main .header .header-score{
   text-align: center;
   background-color: #fff;
   color:#1A354A ;
+  min-height: 100px;
 }
 
 main .header .header-score p span{
@@ -74,7 +78,7 @@ main .header .header-score p span{
   font-weight: 700;
 }
 
-
+/* GAME BOARD!!!!!!!!!!!!!!!! */
 main .game-board{
   display: flex;
   flex-direction: column;
@@ -87,6 +91,10 @@ main .game-board{
   background-position: center;
   padding-top: 10px;
   width: 100%;
+}
+
+main .game-board.hide{
+  display: none;
 }
 
 main .game-board .board-options-top{
@@ -103,7 +111,7 @@ main .game-board .board-options-bottom{
   padding: 25px;
   background-color: #fff;
   width: 120px;
-  height: 120px;
+  min-height: 120px;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   
@@ -115,11 +123,6 @@ main .game-board .board-options-bottom:hover{
   background-color: azure;
 }
 
-main .game-board .board-options-top .board-options-top1 img, 
-main .game-board .board-options-top .board-options-top2 img, 
-main .game-board .board-options-bottom img{
- 
-}
 
 main .score-card .score-card-you,
 main .score-card .score-card-house{
@@ -127,7 +130,7 @@ main .score-card .score-card-house{
   padding: 20px;
   background-color: #fff;
   width: 120px;
-  height: 120px;
+  min-height: 120px;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -146,9 +149,7 @@ main .game-board .board-options-bottom{
 
 
 
-main .container  .score-card{
-  display: ;
-}
+/* SCORE CARD!!!!!!!!!!!!!!!! */
 
 main .score-card{
   display: grid;
@@ -159,23 +160,20 @@ main .score-card{
   align-items: center;
   align-content: center;
   row-gap: 30px;
-  margin-top: 50px;
   width: 700px;
   padding: 30px;
+  margin-top: 60px;
 }
+/* SCORE CARD!!!!!!!!!!!!!!!! */
+main .score-card.hide{
+  display: none;
+}
+
+
 
 main .score-card .score-card-you{
   border: 10px solid  #425ABD;
   
-}
-
-main .score-card .score-card-you p{
-  
-}
-
-
-main .score-card .score-card-you img{
- 
 }
 
 main .container .score-card .score-card-win{
@@ -202,7 +200,7 @@ main .container .score-card .score-card-house{
 }
 
 
-/* FOOTER */
+/* FOOTER!!!!!!!!!!!! */
 main .container footer{
   margin: 50px 0px; 
 }
@@ -223,7 +221,3 @@ footer .footer-rules a{
   margin-right: 20px;
 }
 
-.hide{
-  display: none;
-  opacity: 0;
-}
