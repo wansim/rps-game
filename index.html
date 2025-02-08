@@ -21,7 +21,7 @@
         <div class="header-title "><!-- Header title starts -->
           <img src="/images/logo.svg">
         </div>
-        <div class="header-score "><!-- Header score starts -->
+        <div class="header-score"><!-- Header score starts -->
           <p>SCORE</p>
           <p><span>12</span></p>
         </div>
@@ -30,28 +30,28 @@
       <section class="game-board "><!-- Game board starts -->
         
         <div class="board-options-top boarder"><!-- Game board options -->
-          <div class="board-options-top1 "><!-- Game options starts -->
+          <div id="rock" class="board-buttons board-options-top1 "><!-- Game options starts -->
             <img src="images/icon-paper.svg">
           </div>
-          <div class="board-options-top2 "><!-- Game options starts -->
+          <div  id="paper" class="board-buttons board-options-top2 "><!-- Game options starts -->
             <img src="images/icon-scissors.svg">
           </div>
         </div>
         
-        <div class="board-options-bottom "><!-- Game options starts -->
+        <div  id="scissors" class="board-buttons board-options-bottom "><!-- Game options starts -->
           <img src="images/icon-rock.svg">
         </div>
       </section>
       
 
-      <section class="score-card "><!-- Score card starts -->
-        <div class=""><!-- Score card Col 1 - YOU PICKED -->
+      <section class="score-card hide"><!-- Score card starts -->
+        <div class="you-picked"><!-- Score card Col 1 - YOU PICKED -->
           <p>YOU PICKED</p>
         </div>
         <div class=""><!-- Score card Col 2 - HOUSE PICKED -->
           <p></p>
         </div>
-        <div class=""><!-- Score card Col 3 - HOUSE PICKED -->
+        <div class="house-picked"><!-- Score card Col 3 - HOUSE PICKED -->
           <p>THE HOUSE PICKED</p>
         </div>
 
@@ -59,7 +59,7 @@
           <img src="images/icon-paper.svg">
         </div>
         <div class="score-card-win "><!-- Score Col 2 - YOU WIN -->
-          <p>YOU WIN</p>
+          <p class="win-text">YOU WIN</p>
           <button>PLAY AGAIN</button>
         </div>        
         <div class=" score-card-house "><!-- Score card Col 3 - HOUSE PIECKED IMG -->

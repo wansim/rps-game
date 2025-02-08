@@ -147,7 +147,7 @@ main .game-board .board-options-bottom{
 
 
 main .container  .score-card{
-  display: none;
+  display: ;
 }
 
 main .score-card{
@@ -223,3 +223,7 @@ footer .footer-rules a{
   margin-right: 20px;
 }
 
+.hide{
+  display: none;
+  opacity: 0;
+}
